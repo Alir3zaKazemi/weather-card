@@ -6,11 +6,12 @@ let weatherCondition = document.getElementById("weather-status");
 let todayStats = document.getElementById("today-status");
 let todayMin = document.getElementById("today-min");
 let todayMax = document.getElementById("today-max");
-
+const url = new URL(window.location.href);
+let targetCity = url.search.slice(1);
 
 
 fetch(
-	`https://api.openweathermap.org/data/2.5/weather?q=tehran&units=metric&appid=0a76258bd2fbafc7cf09dd8c480abe2b`
+	`https://api.openweathermap.org/data/2.5/weather?q=${targetCity}&units=metric&appid=0a76258bd2fbafc7cf09dd8c480abe2b`
 )
 	.then((response) => response.json())
 	.then((response) => {
