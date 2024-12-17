@@ -9,6 +9,9 @@
 
 body {
   width: 98vw;
+  background: #6dc7ff;
+  background-image: url("/images/streetlight-cloudy-day.jpg");
+  background-size: cover;
 }
 
 main {
