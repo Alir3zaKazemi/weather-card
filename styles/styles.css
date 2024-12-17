@@ -2,4 +2,111 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
+  font-family: "Cabin",
+    sans-serif;
+}
+
+body {
+  width: 98vw;
+}
+
+main {
+  width: 100%;
+}
+
+.card {
+  width: 30%;
+  margin: 2% auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background: linear-gradient(to bottom, #005C97, #363795);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.location-mark {
+  margin-bottom: -20px;
+}
+
+.city-name {
+  font-size: 37px;
+  font-weight: bold;
+}
+
+.location-services {
+  font-size: 17px;
+}
+
+.tempreture {
+  font-size: 161px;
+  font-weight: bold;
+  position: relative;
+}
+
+.tempreture-sign{
+  position: absolute;
+  top: 13%;
+  right: -30%;
+}
+
+.weather-status {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+button {
+  background: #FFB200;
+  padding: 3% 35px;
+  border-radius: 100px;
+  border: none;
+}
+
+.aqi-button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 23px;
+  margin-bottom: 50px;
+}
+
+.details {
+  width: 90%;
+  font-size: 14px;
+  text-align: right;
+}
+
+.threeday-forecast {
+  width: 90%;
+  font-size: 16px;
+}
+
+.today,
+.tommorow,
+.day-after-tommorow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.details-day-left {
+  display: flex;
+  gap: 10px;
+}
+
+.fiveday-forecast{
+  font-size: 23px;
+  padding-right: 65px;
+  padding-left: 65px;
+  margin-bottom: 35px;
 }

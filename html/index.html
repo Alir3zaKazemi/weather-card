@@ -5,12 +5,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather</title>
-  <link rel="stylesheet" href="/weather/styles/styles.css">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
+  <main>
+    <div class="card">
+      <div class="location-mark"><img src="/images/🦆 icon _place_.png" alt="place-png"></div>
+      <div class="city-name">London</div>
+      <button class="location-services">Turn on location services</button>
+      <div class="tempreture">27
+        <img src="/images/ºC.png" alt="tempreture-sign" class="tempreture-sign">
+      </div>
+      <div class="weather-status">Cloudy</div>
+      <div class="aqi">
+        <div></div>
+        <button class="aqi-button"><img src="/images/Vector.png" alt="vector">AQI 14</button>
+      </div>
+      <div class="details">More details ></div>
+      <div class="threeday-forecast">
+        <div class="today">
+          <div class="details-day-left">
+            <div><img src="/images/🦆 icon _cloud rain_.png" alt=""></div>
+            <div><span>Today</span> • <span>Thunderstorm</span></div>
+          </div>
+          <div class="today-high-low"><span>29</span>° / <span>25</span>°</div>
+        </div>
+        <div class="tommorow">
+          <div class="details-day-left">
+            <div><img src="/images/🦆 icon _cloud sun_.png" alt=""></div>
+            <div><span>Tommorow</span> • <span>Cloudy</span></div>
+          </div>
+          <div class="tommorow-high-low"><span>30</span>° / <span>25</span>°</div>
+        </div>
+        <div class="day-after-tommorow">
+          <div class="details-day-left">
+            <div><img src="/images/🦆 icon _cloud rain_.png" alt=""></div>
+            <div><span>Fri</span> • <span>Thunderstorm</span></div>
+          </div>
+          <div class="day-after-tommorow-high-low"><span>25</span>° / <span>30</span>°</div>
+        </div>
+      </div>
+      <button class="fiveday-forecast">5-day forecast</button>
+    </div>
 
-  <script src="/weather/scripts/script.js"></script>
+  </main>
+
+  <script src="/scripts/script.js"></script>
 </body>
 
 </html>
