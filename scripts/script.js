@@ -6,10 +6,9 @@ let weatherCondition = document.getElementById("weather-status");
 let todayStats = document.getElementById("today-status");
 let todayMin = document.getElementById("today-min");
 let todayMax = document.getElementById("today-max");
-const url = new URL(window.location.href);
-console.log(url.href);
-let targetCity = url.search.slice(1);
-
+const queryString = window.location.search;
+const parameters = new URLSearchParams(queryString);
+const targetCity = parameters.get("city");
 
 fetch(
 	`https://api.openweathermap.org/data/2.5/weather?q=${targetCity}&units=metric&appid=0a76258bd2fbafc7cf09dd8c480abe2b`
@@ -25,6 +24,21 @@ function displayData(obj) {
 	temp.textContent = `${Math.round(obj.main.temp)}`;
 	weatherCondition.textContent = `${obj.weather[0].main}`;
 	todayStats.textContent = `${obj.weather[0].main}`;
-  todayMin.textContent = `${Math.round(obj.main.temp_min)}`
-  todayMax.textContent = `${Math.round(obj.main.temp_max)}`
+	todayMin.textContent = `${Math.round(obj.main.temp_min)}`;
+	todayMax.textContent = `${Math.round(obj.main.temp_max)}`;
 }
+
+// const main = async () => {
+// 	try {
+// 		const res = await fetch(
+// 			`https://api.openweathermap.org/data/2.5/weather?q=${targetCity}&units=metric&appid=0a76258bd2fbafc7cf09dd8c480abe2b`
+// 		);
+// 		const parsedRes = await res.json();
+// 		console.log({ parsedRes });
+// 		displayData(parsedRes);
+// 	} catch (err) {
+// 		alert("error");
+// 	}
+// };
+
+// main();

@@ -7,6 +7,7 @@ fetch(
 )
 	.then((response) => response.json())
 	.then((response) => {
+		console.log({ response });
 		city(response);
 	})
 	.catch((err) => alert("error"));
@@ -15,7 +16,7 @@ function city(obj) {
 	for (let i = 0; i < obj.length; i++) {
 		citiesGrid.insertAdjacentHTML(
 			"beforeend",
-			`<li class="li"><a href="/html/index.html?${obj[i].name}">${obj[i].name}</a></li>`
+			`<li class="li"><a href="/html/index.html?city=${obj[i].name}">${obj[i].name}</a></li>`
 		);
 	}
 }
