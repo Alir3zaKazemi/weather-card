@@ -1,9 +1,6 @@
 "use strict";
 
 let citiesGrid = document.getElementById("city-grid");
-let unorderedList = document.getElementById("list");
-let lists = document.getElementsByTagName("li");
-let lists1 = document.getElementsByClassName("li");
 
 fetch(
 	"https://api.api-ninjas.com/v1/city?min_population=20000&limit=15&X-Api-Key=ghEqDvotGRJyoHj14JQivg==LWSDrWAZ8MSdyGZT"
@@ -22,5 +19,3 @@ function city(obj) {
 		);
 	}
 }
-
-

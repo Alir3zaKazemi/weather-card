@@ -7,6 +7,7 @@ let todayStats = document.getElementById("today-status");
 let todayMin = document.getElementById("today-min");
 let todayMax = document.getElementById("today-max");
 const url = new URL(window.location.href);
+console.log(url.href);
 let targetCity = url.search.slice(1);
 
 
