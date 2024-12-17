@@ -48,7 +48,7 @@ main {
   position: relative;
 }
 
-.tempreture-sign{
+.tempreture-sign {
   position: absolute;
   top: 13%;
   right: -30%;
@@ -84,11 +84,16 @@ button {
   width: 90%;
   font-size: 14px;
   text-align: right;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
 }
 
 .threeday-forecast {
   width: 90%;
   font-size: 16px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .today,
@@ -101,10 +106,10 @@ button {
 
 .details-day-left {
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 
-.fiveday-forecast{
+.fiveday-forecast {
   font-size: 23px;
   padding-right: 65px;
   padding-left: 65px;
